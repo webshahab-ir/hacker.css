@@ -1,0 +1,179 @@
+/* Hacker Style Library - Complete Version */
+
+/* Base Font and Background for Hacker Look */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00; /* Bright green text */
+    background-color: #000000; /* Black background */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00cc00; /* Slightly darker green on hover */
+    text-shadow: 0 0 5px #00ff00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 0 0 5px #00ff00;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Forms */
+input, textarea, select {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: #000000;
+    border: 2px solid #00ff00;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    outline: none;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #00cc00;
+    box-shadow: 0 0 15px #00cc00;
+}
+
+button, .hacker-button {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    background-color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+button:hover, .hacker-button:hover {
+    background-color: #000000;
+    color: #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+button:active, .hacker-button:active {
+    background-color: #00cc00;
+    box-shadow: 0 0 5px #00cc00 inset;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+thead {
+    background-color: #00ff00;
+    color: #000000;
+}
+
+th, td {
+    border: 1px solid #00ff00;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #000000;
+}
+
+tr:hover {
+    background-color: #003300;
+}
+
+/* Code Blocks */
+pre, code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    background-color: #000000;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    overflow-x: auto;
+    display: block;
+}
+
+/* Images */
+img {
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    button, input, textarea, select {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* Additional Utility Classes */
+.hacker-card {
+    background-color: #000000;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px #00ff00;
+    margin: 20px 0;
+}
+
+.hacker-alert {
+    color: #000000;
+    background-color: #00ff00;
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hacker-alert-warning {
+    color: #000000;
+    background-color: #ffff00;
+    border-color: #ff0000;
+}
+
+.hacker-alert-error {
+    color: #ffffff;
+    background-color: #ff0000;
+    border-color: #000000;
+}
